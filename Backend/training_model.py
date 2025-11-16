@@ -29,8 +29,8 @@ val_ds = tf.keras.utils.image_dataset_from_directory(
     batch_size = batch_size
 )
 
-json_filepath = 'models/class_names.json'
-os.makedirs('models', exist_ok=True)
+json_filepath = 'model/class_names.json'
+os.makedirs('model', exist_ok=True)
 class_names = train_ds.class_names
 print(f"class_names: {class_names}")
 num_classes = len(class_names)
@@ -77,8 +77,8 @@ history = model.fit(
     validation_data = val_ds,
     epochs =epochs
 )
-os.makedirs('models', exist_ok=True) 
-model.save('models/model2.h5')
+os.makedirs('model', exist_ok=True) 
+model.save('model/model2.h5')
 
 print("--- Model Training Finished ---")
 print("\n--- Evaluating on Test/Validation Data ---")

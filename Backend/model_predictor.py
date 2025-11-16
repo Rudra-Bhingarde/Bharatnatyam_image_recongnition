@@ -6,9 +6,9 @@ import io
 import json
 import sys
 
-MODEL_PATH = 'models/model1.h5'
-DATASET_PATH = "data_set\Bharatanatyam-Mudra-Dataset-master"
-CLASSES_PATH = 'models/class_names.json'
+MODEL_PATH = 'model/model2.h5'
+DATASET_PATH = "data_set/Bharatanatyam-Mudra-Dataset-master"
+CLASSES_PATH = 'model/class_names.json'
 IMG_HEIGHT = 128
 IMG_WIDTH = 128
 
